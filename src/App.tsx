@@ -12,7 +12,7 @@ import { useProfileStore } from './store/profileStore';
 const queryClient = new QueryClient();
 
 // Placeholder images
-const PROFILE_IMAGE = '../public/images/Linta.jpeg';
+const PROFILE_IMAGE = '/portfolio/images/Linta.jpeg';
 
 const MainContent: React.FC = () => {
   const { 

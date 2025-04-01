@@ -63,7 +63,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       return (
         <div className="flex flex-col items-center">
           <img 
-            src="/images/stock-logo.svg" 
+            src="/portfolio/images/stock-logo.svg" 
             alt="JPMorgan Logo" 
             className="h-20 w-20 mb-4 invert brightness-0 filter"
           />
@@ -73,7 +73,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       return (
         <div className="flex flex-col items-center">
           <img 
-            src="/images/video-logo.svg" 
+            src="/portfolio/images/video-logo.svg" 
             alt="Global Logo" 
             className="h-20 w-20 mb-4 invert brightness-0 filter"
           />
@@ -83,8 +83,19 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       return (
         <div className="flex flex-col items-center">
           <img 
-            src="/images/travel-logo.svg" 
+            src="/portfolio/images/travel-logo.svg" 
             alt="TravelUp Logo" 
+            className="h-20 w-20 mb-4 invert brightness-0 filter"
+          />
+        </div>
+      );
+    }
+    else if (company.toLowerCase().includes('blueteq')) {
+      return (
+        <div className="flex flex-col items-center">
+          <img 
+            src="/portfolio/images/hospital-logo.svg" 
+            alt="Blueteq Logo" 
             className="h-20 w-20 mb-4 invert brightness-0 filter"
           />
         </div>

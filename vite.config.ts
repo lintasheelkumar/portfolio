@@ -18,20 +18,21 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    copyPublicDir: true,
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
       output: {
         manualChunks: undefined,
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
       },
     },
   },
+  publicDir: 'public',
   server: {
-    port: 3000,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
+    port: 3000
   },
 }); 
