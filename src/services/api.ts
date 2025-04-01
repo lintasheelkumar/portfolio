@@ -72,6 +72,17 @@ const MOCK_PROFILE: Profile = {
         'Developed features like seat map booking, flight upgrades, and car rentals using C#, JavaScript and HTML and CSS',
         'Increased data processing efficiency by 25% by optimizing SQL queries for report generation and analysis'
       ]
+    },
+    {
+      companyTitle: 'BTeq',
+      company: 'Blueteq',
+      position: 'Software Engineer',
+      period: '11/2015 - 04/2017',
+      location: 'Portsmouth',
+      achievements: [
+        'Developed features like seat map booking, flight upgrades, and car rentals using C#, JavaScript and HTML and CSS',
+        'Increased data processing efficiency by 25% by optimizing SQL queries for report generation and analysis'
+      ]
     }
   ],
   education: {
