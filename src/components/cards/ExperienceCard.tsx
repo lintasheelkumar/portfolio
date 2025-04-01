@@ -7,7 +7,6 @@ interface ExperienceCardProps {
   period: string;
   location: string;
   achievements: string[];
-  companyLogo?: string;
   onSwipeLeft?: () => void;
   onSwipeRight?: () => void;
 }
@@ -42,7 +41,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   period,
   location,
   achievements,
-  companyLogo,
   onSwipeLeft,
   onSwipeRight,
 }) => {
