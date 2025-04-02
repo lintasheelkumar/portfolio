@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTouchSwipe } from '../../hooks/useTouchSwipe';
 
 interface ExperienceCardProps {
   companyTitle: string;
@@ -57,6 +58,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onSwipeLeft, onSwipeRight]);
+
+  // Add touch swipe functionality
+  useTouchSwipe({
+    onSwipeLeft,
+    onSwipeRight,
+  });
 
   const renderLogo = () => {
     if (company.toLowerCase().includes('jpmorgan')) {

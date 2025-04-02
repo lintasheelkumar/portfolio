@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTouchSwipe } from '../../hooks/useTouchSwipe';
 
 interface EducationCardProps {
   education: {
@@ -32,8 +33,14 @@ const EducationCard: React.FC<EducationCardProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onSwipeLeft, onSwipeRight]);
 
+  // Add touch swipe functionality
+  useTouchSwipe({
+    onSwipeLeft,
+    onSwipeRight,
+  });
+
   return (
-    <div className="education-card w-full bg-white rounded-xl shadow-lg overflow-hidden mx-auto">
+    <div className="education-card w-full bg-white rounded-xl shadow-lg overflow-hidden mx-auto card-container">
       <div className="md:flex h-full">
         <div className="md:w-2/5 bg-gray-100 flex items-center justify-center">
           <div className="h-full w-full bg-bumble-yellow flex items-center justify-center p-6">

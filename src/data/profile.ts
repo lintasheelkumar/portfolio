@@ -3,9 +3,22 @@ export const profileData = {
   title: 'Senior Software Engineer',
   summary: 'Passionate and performance-driven software engineer with experience building responsive and scalable applications. Specializes in modern frontend technologies with a solid foundation in backend systems.',
   skills: [
-    'React', 'Angular', 'TypeScript', 'Node.js', 'JavaScript',
-    'HTML', 'CSS', 'Zustand', 'Redux', 'React Query',
-    'Tailwind', 'Vite', 'Cypress', 'Jest'
+    // Frontend
+    'React', 'Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS',
+    // State Management & Data Fetching
+    'Zustand', 'Redux', 'React Query',
+    // Backend & Languages
+    'Node.js', 'C#', 'Java', 'Python', '.NET',
+    // Frameworks & Libraries
+    'SpringBoot', 'Flask', 'Docker', 'Tailwind', 'Vite',
+    // Testing & CI/CD
+    'Cypress', 'Jest', 'NUnit', 'Jenkins', 'TeamCity', 'Octopus',
+    // Cloud & DevOps
+    'AWS', 'AWS Cloud',
+    // Databases
+    'SQL', 'Oracle DB',
+    // Data Science & ML
+    'TensorFlow', 'Keras', 'NumPy', 'Pandas', 'Scikit-Learn', 'Scipy', 'Seaborn'
   ],
   experience: [
     {

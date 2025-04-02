@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTouchSwipe } from '../../hooks/useTouchSwipe';
 
 interface SkillsCardProps {
   skills: string[];
@@ -27,8 +28,14 @@ const SkillsCard: React.FC<SkillsCardProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onSwipeLeft, onSwipeRight]);
 
+  // Add touch swipe functionality
+  useTouchSwipe({
+    onSwipeLeft,
+    onSwipeRight,
+  });
+
   return (
-    <div className="skills-card w-full bg-white rounded-xl shadow-lg overflow-hidden mx-auto">
+    <div className="skills-card w-full bg-white rounded-xl shadow-lg overflow-hidden mx-auto card-container">
       <div className="md:flex">
         <div className="md:w-2/5 bg-gray-100 min-h-[300px] md:min-h-[400px]">
           {skillsImage ? (
