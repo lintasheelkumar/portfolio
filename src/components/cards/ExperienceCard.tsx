@@ -112,7 +112,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   };
 
   return (
-    <div className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+    <div className="w-full bg-white rounded-xl shadow-lg overflow-hidden card-container">
       <div className="md:flex h-full">
         <div className="md:w-2/5 bg-gray-100 flex items-center justify-center">
           <div className="h-full w-full bg-bumble-yellow flex items-center justify-center p-6">
