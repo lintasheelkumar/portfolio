@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/portfolio/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -16,13 +16,16 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../docs', // GitHub Pages can serve from /docs folder
+    outDir: 'dist',
     assetsDir: 'assets',
     copyPublicDir: true,
-    emptyOutDir: true,
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
       output: {
-        entryFileNames: '[name].js',
+        manualChunks: undefined,
+        entryFileNames: 'assets/[name].[hash].js',
         chunkFileNames: 'assets/[name].[hash].js',
         assetFileNames: 'assets/[name].[hash].[ext]'
       },
