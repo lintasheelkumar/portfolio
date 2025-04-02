@@ -19,10 +19,8 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     copyPublicDir: true,
+    emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
       output: {
         manualChunks: undefined,
         entryFileNames: 'assets/[name].[hash].js',
